@@ -1,0 +1,31 @@
+{% extends 'data_layout.html' %}
+{% block content %}
+ <nav>
+  <a href="https://bit.ly/sendcryptofast">Web3</a> |
+  <a href='https://www.xplace.com/il/u/Mikenzo99s?omloc=us_en'>Xplace</a> |
+  <a href="https://bit.ly/VirtualizeNFT">decentraland</a>
+</nav>
+
+<div class="data-detail">
+  <div class="data_crypto">
+    <h2>{{data_crypto.title}}</h2>
+    <p>{{data_crypto.body}}</p>
+    <p>{{data_crypto.date}}</p>
+    <img src="{{ data_crypto.thumb.url }}">
+</div>
+</div>
+
+<div>  
+  <h3>Contact Us</h3>
+<form action="https://formsubmit.co/mikenzo3@gmail.com" method="POST">
+   <!-- <input type="hidden" name="_captcha" value="false"> -->
+   <input type="email" name="email" placeholder="Email Address" required>
+   <input type="hidden" name="_next" value="https://demmon.neocities.org/Elad_group/TYP_IA_A.html">
+   <input type="hidden" name="_subject" value="New Email submission!">
+   <input type="text" name="Message" placeholder="Write your message here" required>
+   <button type="submit">Send</button>
+</form>
+</div>
+
+
+{% endblock %}

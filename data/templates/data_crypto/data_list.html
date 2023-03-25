@@ -1,0 +1,19 @@
+{% extends 'data_layout.html' %}
+{% block content %}
+<nav>
+    <a href="https://bit.ly/sendcryptofast">Web3</a> |
+    <a href='https://www.xplace.com/il/u/Mikenzo99s?omloc=us_en'>Xplace</a> |
+    <a href="https://bit.ly/VirtualizeNFT">decentraland</a>
+</nav>
+
+<h1>Crypto Data Science</h1>
+<div class="data_crypto">
+    {% for data_crypto in data_crypto %}
+    <div class="data_crypto">
+        <h2><a href="{% url 'data_crypto:detail' slug=data_crypto.slug %}">{{data_crypto.title}}</a></h2>
+    </div> 
+    
+    {% endfor %}
+</div>
+
+{% endblock %}

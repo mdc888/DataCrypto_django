@@ -1,0 +1,9 @@
+{% extends 'data_layout.html' %}
+{% block content %}
+<h1>Signup</h1>
+<form class="site-class" action="/accounts/signup/" method="post">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Signup">
+</form>
+{% endblock %}
